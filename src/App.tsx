@@ -1,14 +1,16 @@
-import Footer from "./features/Footer";
-import Header from "./features/Header";
-import Main from "./features/Main";
+import "./globals.css";
+import styles from "./App.module.css";
 
 function App() {
   return (
-    <>
-      <Header />
-      <Main />
-      <Footer />
-    </>
+    <div className={styles["app-wrapper"]}>
+      <h1>My App</h1>
+
+      <div className="nest-check">Hello</div>
+      <div className="test">
+        <span className="nested">TESTX</span>
+      </div>
+    </div>
   );
 }
 
