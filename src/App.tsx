@@ -1,16 +1,17 @@
-import "./globals.css";
-import styles from "./App.module.css";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Layout from "./Layout";
+import { Home, Booking } from "./pages/";
 
 function App() {
   return (
-    <div className={styles["app-wrapper"]}>
-      <h1>My App</h1>
-
-      <div className="nest-check">Hello</div>
-      <div className="test">
-        <span className="nested">TESTX</span>
-      </div>
-    </div>
+    <Layout>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />}></Route>
+          <Route path="/booking" element={<Booking />}></Route>
+        </Routes>
+      </BrowserRouter>
+    </Layout>
   );
 }
 

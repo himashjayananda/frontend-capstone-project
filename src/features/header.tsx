@@ -1,11 +1,7 @@
-import Nav from "./Nav";
+import React from "react";
 
 const Header = () => {
-  return (
-    <header>
-      <Nav />
-    </header>
-  );
+  return <div className="w-[1080px] mx-auto">Header</div>;
 };
 
 export default Header;
