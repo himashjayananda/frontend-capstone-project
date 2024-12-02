@@ -1,5 +1,5 @@
 const Hero = () => {
-  return <div className="prose lg:prose-lg">Hero</div>;
+  return <div>Hero</div>;
 };
 
 export default Hero;
