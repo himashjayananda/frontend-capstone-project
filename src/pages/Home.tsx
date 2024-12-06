@@ -1,7 +1,7 @@
 import Hero from "@/features/hero";
 import Specials from "@/features/specials";
-import Testimonials from "@/features/Testimonials";
-import Backstory from "@/features/Backstory";
+import Testimonials from "@/features/testimonials";
+import Backstory from "@/features/backstory";
 
 const Home = () => {
   return (

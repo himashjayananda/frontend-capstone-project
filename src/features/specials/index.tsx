@@ -13,7 +13,7 @@ const Specials = () => {
 
       <div className="right-section">
         {specialItems.map((item) => (
-          <SpecialsCard {...item} />
+          <SpecialsCard key={item.item} {...item} />
         ))}
       </div>
     </div>
