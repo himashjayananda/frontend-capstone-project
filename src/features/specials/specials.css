@@ -1,5 +1,5 @@
 .specials-wrapper {
-  @apply p-5 max-w-[1080px] mx-auto;
+  @apply p-5 lg:px-0 max-w-[1080px] mx-auto;
 
   .left-section {
     @apply flex justify-between;

@@ -1,0 +1,19 @@
+.testimonial-card-wrapper {
+  @apply bg-white rounded-xl p-5 text-center flex items-center;
+
+  .comment {
+    @apply italic;
+  }
+
+  .rating-wrapper {
+    @apply flex justify-center mt-4;
+
+    .rating {
+      @apply h-6 w-auto fill-accent;
+    }
+  }
+
+  .name {
+    @apply font-serif mt-4 text-2xl;
+  }
+}
