@@ -1,0 +1,15 @@
+.specials-wrapper {
+  @apply p-5 max-w-[1080px] mx-auto;
+
+  .left-section {
+    @apply flex justify-between;
+
+    .title {
+      @apply text-5xl font-serif mt-2;
+    }
+  }
+
+  .right-section {
+    @apply mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12;
+  }
+}
