@@ -1,0 +1,27 @@
+.hero-wrapper {
+  @apply bg-secondary text-white px-5 py-10 flex items-center;
+
+  .hero-inner-wrapper {
+    @apply max-w-[1080px] mx-auto flex justify-between flex-col md:flex-row gap-5;
+  }
+
+  .content-section {
+    @apply flex-1 flex flex-col justify-center;
+
+    .title {
+      @apply text-6xl font-serif font-bold text-primary;
+    }
+
+    .subtitle {
+      @apply text-4xl font-serif mt-2;
+    }
+
+    .paragraph {
+      @apply text-xl mt-4;
+    }
+  }
+
+  .image-section {
+    @apply w-full md:w-[320px] h-[400px] md:flex-1 object-cover rounded-2xl;
+  }
+}

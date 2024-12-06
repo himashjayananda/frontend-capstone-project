@@ -5,7 +5,7 @@
     @apply hidden gap-6 flex-col md:flex md:flex-row md:visible;
 
     li {
-      @apply text-lg hover:text-lime-500 transition duration-150 cursor-pointer;
+      @apply text-lg hover:text-secondary transition duration-150 cursor-pointer;
     }
   }
 
