@@ -1,0 +1,2 @@
+export const BACKSTORY_PARAGRAPH =
+  "Little Lemon is a charming Chicago-based restaurant that brings a burst of Mediterranean flavors to the heart of the city. Founded with a passion for fresh ingredients and vibrant dishes, it has become a local favorite for its welcoming ambiance and thoughtfully crafted menu. Whether it's a casual lunch or a special evening out, Little Lemon offers a taste of sunshine in every bite, making it a beloved gem in Chicago's culinary scene.";

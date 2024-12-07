@@ -5,6 +5,7 @@ import "./specials-card.css";
 interface SpecialsCardProps {
   item: string;
   img: string;
+  imgAlt: string;
   price: string;
   description: string;
 }
@@ -12,12 +13,13 @@ interface SpecialsCardProps {
 const SpecialsCard: FC<SpecialsCardProps> = ({
   item,
   img,
+  imgAlt,
   price,
   description,
 }) => {
   return (
     <div className="specials-card-wrapper">
-      <img src={img} className="card-image" />
+      <img src={img} alt={imgAlt} className="card-image" />
       <div className="card-content">
         <div className="name-price-section">
           <span className="item">{item}</span>
