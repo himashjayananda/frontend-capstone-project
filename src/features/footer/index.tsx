@@ -4,7 +4,7 @@ import "./footer.css";
 const Footer = () => {
   return (
     <div className="footer-wrapper">
-      <div className="w-[1080px] mx-auto grid grid-cols-1 gap-y-6 md:gap-y-4 lg:gap-0 md:grid-cols-2 lg:grid-cols-4">
+      <div className="footer-inner-wrapper">
         <div>
           <img
             src="/images/logo-footer.png"
