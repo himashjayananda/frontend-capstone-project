@@ -1,5 +1,5 @@
 .backstory-wrapper {
-  @apply max-w-[1080px] mx-auto px-5 py-16 flex flex-col md:flex-row justify-between gap-12;
+  @apply max-w-[1080px] mx-auto px-5 py-10 lg:pb-24 flex flex-col md:flex-row justify-between gap-12;
 
   .content-wrapper {
     @apply flex-1;
@@ -21,7 +21,7 @@
     @apply relative flex-1;
 
     .image {
-      @apply md:h-[240px] md:max-w-[320px] lg:h-[280px] lg:max-w-[400px] object-cover rounded-3xl absolute;
+      @apply md:h-[240px] md:max-w-[320px] lg:h-[280px] lg:max-w-[400px] object-cover rounded-3xl md:absolute;
 
       &.image-first {
         @apply hidden md:block;

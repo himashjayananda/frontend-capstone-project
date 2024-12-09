@@ -1,0 +1,7 @@
+.footer-wrapper {
+  @apply bg-secondary text-white py-12 px-5 lg:px-0;
+
+  .section-title {
+    @apply font-serif text-3xl uppercase mb-2;
+  }
+}

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { NavLink } from "react-router-dom";
 import Hamburger from "@/assets/hamburger.svg?react";
 import { cn } from "@/lib/cn";
 import "./nav.css";
@@ -10,14 +11,29 @@ const Nav = () => {
 
   return (
     <nav className="nav-wrapper">
-      <Hamburger className="hamburger" onClick={toggleIsExpanded} />
+      <Hamburger
+        className={cn("hamburger", isExpanded && "is-active")}
+        onClick={toggleIsExpanded}
+      />
       <ul className={cn("nav-item-wrapper", isExpanded && "expanded-nav")}>
-        <li>Home</li>
-        <li>About</li>
-        <li>Menu</li>
-        <li>Reservations</li>
-        <li>Order Online</li>
-        <li>Login</li>
+        <li>
+          <NavLink to={"/"}>Home</NavLink>
+        </li>
+        <li>
+          <NavLink to={"#about"}>About</NavLink>
+        </li>
+        <li>
+          <NavLink to={"#menu"}>Menu</NavLink>
+        </li>
+        <li>
+          <NavLink to={"#reservations"}>Reservations</NavLink>
+        </li>
+        <li>
+          <NavLink to={"#order-online"}>Order Online</NavLink>
+        </li>
+        <li>
+          <NavLink to={"#order-online"}>Login</NavLink>
+        </li>
       </ul>
     </nav>
   );
