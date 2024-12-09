@@ -7,13 +7,13 @@ const Specials = () => {
   return (
     <div className="specials-wrapper">
       <div className="left-section">
-        <h3 className="title">This weeks specials!</h3>
+        <h2 className="title">This weeks specials!</h2>
         <Button>Online Menu</Button>
       </div>
 
       <div className="right-section">
-        {specialItems.map((item) => (
-          <SpecialsCard key={item.item} {...item} />
+        {specialItems.map((specialItem) => (
+          <SpecialsCard key={specialItem.item} {...specialItem} />
         ))}
       </div>
     </div>

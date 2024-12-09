@@ -1,0 +1,10 @@
+.footer-wrapper {
+  @apply bg-secondary text-white py-12 px-5 lg:px-0;
+
+  .footer-inner-wrapper {
+    @apply w-[1080px] mx-auto grid grid-cols-1 gap-y-6 md:gap-y-4 lg:gap-0 md:grid-cols-2 lg:grid-cols-4;
+  }
+  .section-title {
+    @apply font-serif text-3xl uppercase mb-2;
+  }
+}

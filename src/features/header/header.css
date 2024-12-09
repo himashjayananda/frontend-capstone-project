@@ -1,8 +1,8 @@
 .header-wrapper {
-  @apply max-w-[1080px] mx-auto p-5 md:py-5 xl:px-0;
+  @apply sticky top-0 bg-white border-b-2 border-b-secondary;
 
-  .header-wrapper-inner {
-    @apply flex items-center justify-between;
+  .header-inner-wrapper {
+    @apply max-w-[1080px] mx-auto flex items-center justify-between p-5 md:py-5 xl:px-0;
   }
 
   .logo {

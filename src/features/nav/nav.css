@@ -11,9 +11,13 @@
 
   .hamburger {
     @apply block cursor-pointer md:hidden;
+
+    &.is-active path {
+      @apply fill-primary transition duration-150;
+    }
   }
 
   .expanded-nav {
-    @apply fixed flex md:hidden bg-white top-[88px] left-0 px-5 gap-4;
+    @apply fixed flex md:hidden bg-white top-[88px] left-0 px-5 gap-4 w-full pb-5 border-b-2 border-b-secondary;
   }
 }

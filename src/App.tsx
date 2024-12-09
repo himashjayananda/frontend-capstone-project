@@ -4,14 +4,14 @@ import { Home, Booking } from "./pages/";
 
 function App() {
   return (
-    <Layout>
-      <BrowserRouter>
+    <BrowserRouter>
+      <Layout>
         <Routes>
           <Route path="/" element={<Home />}></Route>
           <Route path="/booking" element={<Booking />}></Route>
         </Routes>
-      </BrowserRouter>
-    </Layout>
+      </Layout>
+    </BrowserRouter>
   );
 }
 
