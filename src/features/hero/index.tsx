@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Button from "@/components/button";
 import "./hero.css";
 
@@ -15,7 +16,9 @@ const Hero = () => {
             Greek salads, is a testament to our belief that food is an art.
           </p>
           <div className="mt-5">
-            <Button>Reserve a table</Button>
+            <Link to={"/booking"}>
+              <Button>Reserve a table</Button>
+            </Link>
           </div>
         </div>
         <img

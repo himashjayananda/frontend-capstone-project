@@ -8,6 +8,7 @@ const Nav = () => {
   const [isExpanded, setIsExpanded] = useState(false);
 
   const toggleIsExpanded = () => setIsExpanded(!isExpanded);
+  const collapseNav = () => setIsExpanded(false);
 
   return (
     <nav className="nav-wrapper">
@@ -17,22 +18,34 @@ const Nav = () => {
       />
       <ul className={cn("nav-item-wrapper", isExpanded && "expanded-nav")}>
         <li>
-          <NavLink to={"/"}>Home</NavLink>
+          <NavLink to={"/"} onClick={collapseNav}>
+            Home
+          </NavLink>
         </li>
         <li>
-          <NavLink to={"#about"}>About</NavLink>
+          <NavLink to={"#about"} onClick={collapseNav}>
+            About
+          </NavLink>
         </li>
         <li>
-          <NavLink to={"#menu"}>Menu</NavLink>
+          <NavLink to={"#menu"} onClick={collapseNav}>
+            Menu
+          </NavLink>
         </li>
         <li>
-          <NavLink to={"#reservations"}>Reservations</NavLink>
+          <NavLink to={"/booking"} onClick={collapseNav}>
+            Reservations
+          </NavLink>
         </li>
         <li>
-          <NavLink to={"#order-online"}>Order Online</NavLink>
+          <NavLink to={"#order-online"} onClick={collapseNav}>
+            Order Online
+          </NavLink>
         </li>
         <li>
-          <NavLink to={"#order-online"}>Login</NavLink>
+          <NavLink to={"#order-online"} onClick={collapseNav}>
+            Login
+          </NavLink>
         </li>
       </ul>
     </nav>
