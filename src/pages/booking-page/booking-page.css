@@ -1,0 +1,15 @@
+.booking-page-wrapper {
+  @apply pt-6 pb-12 px-5 lg:px-0;
+
+  .title {
+    @apply font-serif text-5xl text-secondary mb-8 text-center;
+  }
+
+  .inner-wrapper {
+    @apply max-w-[1080px] mx-auto flex flex-col md:flex-row justify-between gap-8;
+  }
+
+  .image {
+    @apply rounded-3xl h-full w-full object-cover;
+  }
+}

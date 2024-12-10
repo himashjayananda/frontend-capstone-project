@@ -3,7 +3,7 @@ import Specials from "@/features/specials";
 import Testimonials from "@/features/testimonials";
 import Backstory from "@/features/backstory";
 
-const Home = () => {
+const HomePage = () => {
   return (
     <>
       <Hero />
@@ -14,4 +14,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default HomePage;

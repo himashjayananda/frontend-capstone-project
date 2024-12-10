@@ -1,0 +1,7 @@
+.booking-form-wrapper {
+  @apply flex flex-col;
+
+  .form-item {
+    @apply py-3 flex flex-col gap-3;
+  }
+}

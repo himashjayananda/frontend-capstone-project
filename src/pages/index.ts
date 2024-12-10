@@ -1,2 +1,2 @@
-export { default as Home } from './Home'
-export { default as Booking } from './Booking'
+export { default as Home } from "./home-page";
+export { default as Booking } from "./booking-page";

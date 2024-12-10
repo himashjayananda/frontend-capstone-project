@@ -1,4 +1,4 @@
-const { colors } = require("tailwindcss/defaultTheme");
+import formsPlugin from "@tailwindcss/forms";
 
 /** @type {import('tailwindcss').Config} */
 export default {
@@ -9,7 +9,6 @@ export default {
       serif: ["Markazi Text", "serif"],
     },
     colors: {
-      ...colors,
       primary: "#F4CE14",
       secondary: "#495E57",
       accent: "#EE9972",
@@ -18,4 +17,5 @@ export default {
     },
     extend: {},
   },
+  plugins: [formsPlugin],
 };
