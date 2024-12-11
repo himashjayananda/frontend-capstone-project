@@ -1,5 +1,6 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react-swc'
+/// <reference types="vitest/config" />
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react-swc";
 import path from "path";
 import svgr from "vite-plugin-svgr";
 
@@ -11,7 +12,12 @@ export default defineConfig({
     },
   },
   server: {
-    port: 3000
+    port: 3000,
   },
   plugins: [react(), svgr()],
-})
+  test: {
+    environment: "jsdom",
+    setupFiles: ["./setupTests.ts"],
+    globals: true,
+  },
+});
