@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { render, screen } from "@testing-library/react";
+import { fireEvent, render, screen, waitFor } from "@testing-library/react";
 import BookingForm from ".";
 
 describe("BookingForm tests", () => {
@@ -10,5 +10,17 @@ describe("BookingForm tests", () => {
     expect(
       container.querySelector(".booking-form-wrapper")
     ).toBeInTheDocument();
+  });
+
+  it("should render BookingConfirmation component on Submit", async () => {
+    render(<BookingForm />);
+
+    fireEvent.click(screen.getByText("Reserve"));
+
+    await waitFor(() => {
+      expect(
+        screen.getByText("Your Booking is Confirmed.")
+      ).toBeInTheDocument();
+    });
   });
 });
