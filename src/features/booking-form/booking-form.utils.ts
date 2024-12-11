@@ -14,7 +14,6 @@ export type BookingFormSchema = z.infer<typeof bookingFormSchema>;
 
 export const FORM_DEFAULT_VALUES = {
   date: new Date().toJSON().slice(0, 10),
-  time: "17:00",
   numberOfGuests: 1,
   occasion: "birthday",
 };

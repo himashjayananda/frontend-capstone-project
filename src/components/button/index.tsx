@@ -9,6 +9,7 @@ const Button: FC<ButtonProps> = ({ type = "button", children }) => {
     <button
       type={type}
       className="py-3 px-6 bg-primary text-secondary hover:opacity-90 rounded-xl text-xl font-bold transition duration-150ms"
+      aria-label="On Click"
     >
       {children}
     </button>

@@ -1,0 +1,9 @@
+.booking-confirmation-wrapper {
+  .booking-confirmation-title {
+    @apply text-xl font-semibold;
+  }
+
+  .booking-confirmation-subtitle {
+    @apply mt-2;
+  }
+}
